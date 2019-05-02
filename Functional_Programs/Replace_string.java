@@ -6,7 +6,6 @@ public class Replace_string {
 	private static Scanner scanner1;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		//Declare and initialize variables
 		String username,replacedString="";

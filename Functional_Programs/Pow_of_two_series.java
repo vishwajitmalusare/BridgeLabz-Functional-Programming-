@@ -3,7 +3,6 @@ package Functional_program;
 public class Pow_of_two_series {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		//declare and accept command line input
 		int number=Integer.parseInt(args[0]);
@@ -16,8 +15,8 @@ for(i=1;i<=number;i++) {
 
 	int power=(int)Math.pow(2,i);
 	System.out.println("2^"+i+" = "+power);	
-int len=String.valueOf(power).length();
-	//System.out.println("inside"+digit);
+	int len=String.valueOf(power).length();
+
 	if(len==4) {
 		
 		if(power%4==0 || power%400==0) {

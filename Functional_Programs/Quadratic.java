@@ -4,10 +4,7 @@ import java.util.Scanner;
 public class Quadratic {
 private static Scanner sc;
 	public static void main(String[] args) {
-		
-	//equation is a*x*x+b*x+c
-		//Try it in float
-		//int ;
+	
 		double b=0,c=0,a=0;
 		sc=new Scanner(System.in);
 	

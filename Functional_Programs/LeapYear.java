@@ -5,7 +5,7 @@ public class LeapYear {
 	private static Scanner sc;
 
 		public static void main(String[] args) {
-//data to process
+
 	int year=0,digit=0;
 
 System.out.println("Enter the Year:");
@@ -23,7 +23,7 @@ while(number!=0){
 
 
 
-//Checking for Leeap Year....Century is may or may not change the result : it not work on e.g without 400=2000
+//Checking for Leeap Year
 if(digit==4) {
 if((year%4==0 && year%100!=0)||year%400==0){
 	

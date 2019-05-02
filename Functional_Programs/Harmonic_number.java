@@ -7,15 +7,14 @@ public class Harmonic_number {
 
 	public static void main(String[] args) {
 		
-// Data to use further
+
 		float number=1f,result=1f;
 
-//Accept from user
 		System.out.println("Enter number: ");
 		sc = new Scanner(System.in);
 		number=sc.nextInt();
 
-//Calculation part
+
 		if(number>0) {
 			for(int i=2;i<=number;i++) {
 				result +=(float)1/i;

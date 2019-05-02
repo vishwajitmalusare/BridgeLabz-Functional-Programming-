@@ -16,10 +16,7 @@ public class Gambler {
 		stake=sc.nextInt();
 		goal=sc.nextInt();
 		trails=sc.nextInt();
-		
 	
-		//Actual functioning
-		//main loop
 		while(trails!=0) {
 			System.out.println("Enter Your Dice Number:-> ");
 			int ch=sc.nextInt();
@@ -56,22 +53,21 @@ public class Gambler {
 		
 		
 		//Output Section
-//System.out.println("Percentage of Wining: "+100*wins/ trails);
+
 System.out.println("Number of bets: "+bets);
-System.out.println("Percentage of Wins:"+(wins)/trails);//Percentages are not calculated...showing nothing
+System.out.println("Percentage of Wins:"+(wins/trails)*100);
 System.out.println("Number of lose "+lose);
 System.out.println("Number of Wins:"+wins);
 
 	}
 
-	//redefine function
+
 	public static int Randm() {
 		double ran=Math.random();
-		int ran_int=(int)(ran*6.0)+1;//try calculation for generate values 1-6..IMP
+		int ran_int=(int)(ran*6.0)+1;
 		return ran_int;
 	}
 }
 
 
-
-//Lookout for real gambler game...??
+// there is problem in some functionality just improve it

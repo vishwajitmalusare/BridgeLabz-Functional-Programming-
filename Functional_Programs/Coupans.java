@@ -40,4 +40,3 @@ public class Coupans {
 System.out.println("Number of time random function is called: "+count);
 }
 }
-//Make it run for 100 or 1000 inputs
