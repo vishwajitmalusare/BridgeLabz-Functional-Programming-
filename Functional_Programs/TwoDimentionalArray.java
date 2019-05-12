@@ -1,9 +1,9 @@
-package Functional_program;
+package com.bridgelabz.functionalprogram;
 
 import java.util.Scanner;
 import java.io.PrintWriter;
 
-public class Two_dimentional_array{
+public class TwoDimentionalArray{
 private static Scanner sc;
 public static PrintWriter pw;
 	public static void main(String[] args) {

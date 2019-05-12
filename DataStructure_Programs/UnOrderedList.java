@@ -18,7 +18,7 @@ public class UnOrderedList {
 
 	
 	public static <T> void main(String[] args) {
-		List<String>Al=new List<String>();
+		List<String>li=new List<String>();
 		Object a;
 		try {
 			BufferedReader br = new BufferedReader(new FileReader("/home/user/eclipse-workspace/Functional_Programs/src/com/bridgelabz/datastructure/xyz.txt"));
@@ -28,33 +28,33 @@ public class UnOrderedList {
 				// split line into words when you get comma and store words in array
 				Object arr[] = ((String) a).split(" ");
 				for(int i=0;i<arr.length;i++) {
-					Al.Add1(arr[i]);
+					li.Add1(arr[i]);
 				}
 				br.close();
-				Al.Show();
-				System.out.println("Linked List Size is : "+Al.Size());
+				li.Show();
+				System.out.println("Linked List Size is : "+li.Size());
 				System.out.println();
 				System.out.println("Search the Word...!!! ");
 				T word=(T) Utility.scan.next();
 				
 				
-				if(Al.Search((String) word)) {
-					int rem=Al.Index((String) word);
+				if(li.Search((String) word)) {
+					int rem=li.Index((String) word);
 					System.out.println("Position of Element In list "+rem);
-					Al.Remove(rem);
-					Al.Show();
+					li.Remove(rem);
+					li.Show();
 					System.out.println("Remove Word is : "+word);
 					System.out.println();
-					System.out.println("Linked List Size is : "+Al.Size());
-					Al.effect();
+					System.out.println("Linked List Size is : "+li.Size());
+					li.effect();
 					
 				}else {
 					
-					Al.Add1(word);
-					Al.Show();
-					System.out.println("Linked List Size is : "+Al.Size());
+					li.Add1(word);
+					li.Show();
+					System.out.println("Linked List Size is : "+li.Size());
 					System.out.println();
-					Al.effect();
+					li.effect();
 				}
 				
 				

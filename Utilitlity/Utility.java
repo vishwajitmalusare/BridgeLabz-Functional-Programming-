@@ -1,5 +1,6 @@
 package com.bridgelabz.utility;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Utility {
@@ -220,12 +221,9 @@ public static int findMid(int l,int r) {
 }
 
 //-----------------------------------------------------------------------------------------
-/*
- * Coupon function
- * */
- 
 
 /*
+Coupon Collection programs
 functionality to collect the unique coupons
 */	
 public static int collect(int n) {
@@ -268,6 +266,8 @@ public static void calculateDistance(int a,int b) {
 System.out.println("Distance= "+res );
 	}
 
+
+
 //-----------------------------------------------Flip Coin----------------------------------------
 public static void flipCoin() {
 	//variable declaration and initialization
@@ -298,16 +298,10 @@ public static void flipCoin() {
 	System.out.println("Percentage of tails= "+per_tails+"%");
 	}
 
+
 //--------------------------------Day of Week---------------------------------------------------------
-public static void dayOfWeek() {
-	System.out.println("Enter the day: ");
-	int d=Utility.scan.nextInt();
-	System.out.println("Enter the Month: ");
-	int m =Utility.scan.nextInt();
-	System.out.println("Enter the Year: ");
-	int y =Utility.scan.nextInt();
-	
-	
+public static int dayOfWeek(int d,int m,int y) {
+
 	int x= y + y/4 - y/100 +y/400;
 	y= y-(14-m)/12;
 	m= m+12*((14-m)/12)-2;
@@ -315,6 +309,7 @@ public static void dayOfWeek() {
 	//System.out.println(d);
 	String days[]= {"Sunday","Monday","Tuseday","Wendesday","Thursday","Friday","Saturday"};
 	System.out.println(days[d]);
+	return d;
 }
 //--------------------------------Monthly Payment--------------------------------------------
 public static void monthlyPayment(){
@@ -408,6 +403,76 @@ if(power%4==0 || power%400==0) {
 }
 
 }
+}
+
+//-------------------------------------Prime----------------------------
+public static void isPrime() {
+	int i,j;
+boolean isPrime=false;
+
+//functionality
+for(i=2;i<=1000;i++) {
+	for(j=2;j<i;j++){
+		if(i%j==0) {
+			isPrime=false;
+			break;
+			}
+		else {
+			
+			isPrime=true;
+			
+		}
+	}
+	if(isPrime==true){
+		System.out.println(i);
+	}
+}
+}
+
+//------------------Number anagram-----------------
+
+public static boolean isAnagram(String s, String s1) {
+	int l,l1;
+	boolean x=false;
+	l=s.length();
+	l1=s1.length();
+	char s2[]=new char[l+1];
+	char s3[]=new char[l1+1];
+	if(l!=l1) {
+		return false;
+	}
+	else{
+		s2=s.toCharArray();
+		s3=s1.toCharArray();
+		Arrays.sort(s2);
+		Arrays.sort(s3);
+		
+		for(int i=0;i<l;i++) {
+			if(s2[i]==s3[i]) {
+				x=true;
+			}
+			else {
+				x=false;
+				break;
+			}
+		}
+		if(x==true) {
+			System.out.println("Is anagram ");
+			//Print the number in the format
+			for(int i=0;i<l;i++) {
+				System.out.print("num1="+s2[i]);
+			}
+			System.out.println();
+			for(int j=0;j<l1;j++) {
+				System.out.print("num2="+s3[j]);
+			}
+			return true;
+		}
+		else {
+			System.out.println("Is not an anagram... ");
+			return false;
+		}
+	}
 }
 
 //class s bracket	

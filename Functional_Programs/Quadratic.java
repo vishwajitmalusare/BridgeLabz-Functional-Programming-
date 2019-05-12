@@ -1,17 +1,27 @@
-package Functional_program;
-import java.util.Scanner;
-
+/**
+ * @ProblemStatement: Write a program Quadratic.java to find the roots of the equation a*x*x + b*x + c. 
+ * Since the equation is x*x, hence there are 2 roots. The 2 roots of the equation can be found using a formula 
+ * delta = b*b ­ 4*a*c 
+ * Root 1 of x = (­b + sqrt(delta))/(2*a)
+ * Root 2 of x = (­b ­ sqrt(delta))/(2*a)
+ * Take a, b and c as input values to find the roots of x.
+ * @author : Vishwajeet Malusare
+ * */
+package com.bridgelabz.functionalprogram;
+import com.bridgelabz.utility.Utility;
+/**
+ * This class is written to findout the root of Quadratic equation
+ * */
 public class Quadratic {
-private static Scanner sc;
+
 	public static void main(String[] args) {
-	
 		double b=0,c=0,a=0;
-		sc=new Scanner(System.in);
 	
 		System.out.println("Enter the a,b & c ");
-		a=sc.nextDouble();
-		b=sc.nextInt();
-		c=sc.nextInt();
+		//Variable a,b,c store the value which used in formulas
+		a=Utility.scan.nextDouble();
+		b=Utility.scan.nextInt();
+		c=Utility.scan.nextInt();
 	
 	double delta=b*b-4*(a*c);
 	double root1_of_x = ((-b)+Math.sqrt(delta))/(2*a);

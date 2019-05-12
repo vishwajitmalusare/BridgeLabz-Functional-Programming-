@@ -22,12 +22,10 @@ int count=0;
 public class Node <T>{
 	 T data;
 	 Node next;
-	 
 	}
 
-
 /*
- * THIS FUCTION USE TO INSERT DATA INTO THE LINKED LIST 
+ * INSERT DATA INTO THE LINKED LIST 
  */
 
 public <T> void Add1(T item) {

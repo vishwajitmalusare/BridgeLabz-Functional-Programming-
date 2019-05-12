@@ -1,0 +1,23 @@
+{
+  "Rice":
+	[
+		{"name":"Basmati Rice","weight":10,"price":110},
+		{"name":"Indrayni Rice","weight":55,"price":170},
+		{"name":"Kumad Rice","weight":35,"price":168},
+		{"name":"Brown Rice","weight":9,"price":145}
+
+	],
+  "Pulses":
+	[
+		{"name":"Lobiae","weight":17,"price":180},
+		{"name":"Chickpeas","weight":9,"price":80},
+		{"name":"Green Gram","weight":17,"price":100}	
+	],
+  "Wheat":
+	[
+		{"name":"Ashirwad","weight":5,"price":180},
+		{"name":"Patanjali","weight":10,"price":235},
+		{"name":"Ayush","weight":8,"price":155}
+	]	
+
+}
