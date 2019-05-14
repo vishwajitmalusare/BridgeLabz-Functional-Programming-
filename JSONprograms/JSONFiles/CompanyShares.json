@@ -1,0 +1,25 @@
+[ {
+  "companyName" : "tata consultancy",
+  "stockSymbol" : "TCS",
+  "noOfShares" : 950,
+  "price" : 1250,
+  "dateTime" : "Tue May 14 14:50:27 IST 2019"
+}, {
+  "companyName" : "TATA TECHNOLOGY",
+  "stockSymbol" : "TATA",
+  "noOfShares" : 150,
+  "price" : 1400,
+  "dateTime" : "Tue May 14 14:50:27 IST 2019"
+}, {
+  "companyName" : "mahindra",
+  "stockSymbol" : "MHD",
+  "noOfShares" : 1500,
+  "price" : 1400,
+  "dateTime" : "Tue May 14 14:50:27 IST 2019"
+}, {
+  "companyName" : "HSBC BANK",
+  "stockSymbol" : "HSBC",
+  "noOfShares" : 29,
+  "price" : 500,
+  "dateTime" : "Tue May 14 14:50:27 IST 2019"
+} ]

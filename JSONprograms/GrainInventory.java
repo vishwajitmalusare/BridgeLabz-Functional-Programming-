@@ -13,10 +13,12 @@ import java.io.Serializable;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.map.ObjectMapper;
 @SuppressWarnings("serial")
+/**
+ * This class is written for maintain the inventory details 
+ * */
 public class GrainInventory implements Serializable{
 
 	public static void main(String[] args)  {
-	//Scanner scan=new Scanner(System.in);		
 	
 	ObjectMapper mapper=new ObjectMapper();	// creation of object mapper reference
 									// for file reference 
@@ -77,7 +79,7 @@ public class GrainInventory implements Serializable{
 			System.out.println();
 		}}while(choice!=4);
 	} catch (IOException e) {
-		// TODO Auto-generated catch block
+		
 		System.out.println("error occured while parsing a file");
 		e.printStackTrace();
 	}

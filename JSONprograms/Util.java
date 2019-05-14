@@ -14,6 +14,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 public class Util {
 	private static ObjectMapper mapper = new ObjectMapper();
 	
+	//java to json---------------------------------------------------
 	public static String javaToJson(Object obj) {
 		String jsonResult="";
 		try {
@@ -31,6 +32,7 @@ public class Util {
 		return jsonResult;
 	}
 	
+	//jsonToJava------------------------------------
 	public static <T> T jsonToJava(String jsonString,Class<T> cls) {
 		T result=null;
 		try {

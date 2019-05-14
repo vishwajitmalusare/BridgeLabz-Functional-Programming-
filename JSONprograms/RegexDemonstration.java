@@ -10,10 +10,13 @@ package com.jsonprograms;
 import java.util.regex.Pattern;
 //import java.time.LocalDate;
 //import java.time.format.DateTimeFormatter;
-
+/**
+ * This class is written for replace object using regex in java  
+ * */
 public class RegexDemonstration {
 
 	public static void main(String[] args) {
+		//This variable store the input string
 		String mInputString = "Hello <<name>>, We have your full name as <<fullname>> in our system. your contact "
 				+ "number is +91 xxxxxxxxxx.Please, let us\nknow in case of any clarification Thank You BridgeLabz"
 				+ " 01/01/2016.";
@@ -27,7 +30,6 @@ public class RegexDemonstration {
 		
 		String fullName= firstName+" "+lastName;
 		
-		//Pattern r= Pattern.compile("[a-zA-z]+");
 	
 		if(Pattern.matches("[a-zA-Z]+", firstName)) {
 			mInputString=mInputString.replaceAll("<<name>>", firstName);
@@ -41,7 +43,7 @@ public class RegexDemonstration {
 		}
 		System.out.println("Enter Date: ");
 		String Date=JsonUtil.scan.next();
-		//work on curren date........
+		//work on curren date.....................Its not done
 //		DateTimeFormatter dtf= DateTimeFormatter.ofPattern("DD/MM/YYYY");
 //		LocalDate currentDate=LocalDate.now();
 		String day=Date;
