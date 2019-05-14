@@ -12,7 +12,8 @@ import com.bridgelabz.utility.Utility;
 public class LeapYear {
 
 		public static void main(String[] args) {
-
+			/**This block accepts only positive integers*/
+			try {
 			//varibales are used to store year and count
 			int year=0,digit=0;
 			System.out.println("Enter the Year:");
@@ -41,5 +42,8 @@ public class LeapYear {
 			else {
 				System.out.println("Enter Four digit year only !!!");
 			}
-		}
+			}catch(Exception e) {
+				System.out.println("Enter the positive integer: "+e);
+			}
+			}	
 }

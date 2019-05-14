@@ -6,6 +6,7 @@
 package com.bridgelabz.functionalprogram;
 
 import com.bridgelabz.utility.Utility;;
+/**This class is written for calculate harmonic number*/
 public class HarmonicNumber {
 
 

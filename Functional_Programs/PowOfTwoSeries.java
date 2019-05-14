@@ -14,6 +14,10 @@ public class PowOfTwoSeries {
 
 	public static void main(String[] args) {
 	
+		/**
+		 * This block accepts only positive integers
+		 * */
+		try {
 		System.out.println("Enter the number :");
 		//This variable stores the length upto series is going to be calculated
 		int seriesCount=Utility.scan.nextInt();
@@ -21,5 +25,8 @@ public class PowOfTwoSeries {
 		 * This function return the power of two series
 		 * */
 		Utility.powerOfTwoSeries(seriesCount);
+	}catch(Exception e) {
+		System.out.println("Only accepts the positive integers its returns"+e);
+	}
 	}
 }
