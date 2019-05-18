@@ -1,0 +1,46 @@
+{
+"Stock" :
+	[
+		{
+		   	"Stock_Name" : "Bitwise",	
+			"Number_of_Share": 10,
+			"Share_Price" : 469
+		},
+		{
+		   	"Stock_Name" : "Persitant",	
+			"Number_of_Share": 10,
+			"Share_Price" : 569
+		},
+		
+		{
+		   	"Stock_Name" : "Accenture",	
+			"Number_of_Share" :10,
+			"Share_Price" :596
+		},			
+		{
+		   	"Stock_Name" : "Wipro",	
+			"Number_of_Share" :10,
+			"Share_Price": 789
+		},			
+		{
+		   	"Stock_Name" : "TCS",	
+			"Number_of_Share": 10,
+			"Share_Price": 989
+		},			
+		{
+		   	"Stock_Name" : "ThoughtWorks",	
+			"Number_of_Share": 10,
+			"Share_Price" : 369
+		},
+		{
+			"Stock_Name" : "CapgeMini",
+			"Number_of_Share": 12,
+			"Share_Price": 518
+			
+		}			
+		
+	]
+
+
+
+}
